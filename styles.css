@@ -1,77 +1,110 @@
-
 * {
-    box-sizing: border-box;
-  }
-  
-  body,
-  div,
-  dl,
-  dt,
-  dd,
-  ul,
-  ol,
-  li,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  pre,
-  form,
-  fieldset,
-  input,
-  textarea,
-  p,
-  blockquote,
-  th,
-  td {
-    margin: 0;
-    padding: 0;
-  }
-  
-  html,
-  body {
-    margin: 0;
-    padding: 0;
-  }
+  box-sizing: border-box;
+}
 
-  h3 {
-    font-size: 1.6rem;
-  }
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
 
-  body {
-    font-size: 16px;
-  }
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
 
-  nav {
+h3 {
+  font-size: 1.6rem;
+}
+
+body {
+  font-size: 16px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(210, 96%, 33%);
+  color: white;
+  padding: 1.3rem 1.5rem;
+}
+
+nav img {
+  width: 30px;
+  height: 30px;
+}
+
+nav .companyIntro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  gap: 20px;
+  font-size: 1.5rem;
+}
+
+nav ul li:hover {
+  cursor: pointer;
+  color: #fca500;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+nav a:visited{
+color: white;
+}
+
+nav .searchBar {
+    background-color: white;
+    padding: .5rem 1rem;
+    border-radius: 30px;
+    width: 300px;
+}
+
+nav .searchBar form {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    background-color: black;
+}
+
+nav .searchBar input[type="text"] {
+    border: none;
+}
+
+nav .searchBar button {
+    background: none;
+    border: none;
+    background-color: #00A972;
     color: white;
-    padding: 1.3rem 1.5rem;
-  }
-
-  nav img {
-    width: 30px;
-    height: 30px;
-  }
-
-  nav .companyIntro {
-    display: flex;
-  }
-
-  nav ul {
-    display: flex;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    gap: 20px;
-    font-size: 1.5rem;
-  }
-
-  nav ul li:hover {
-    cursor: pointer;
-    color: hsl(120, 100%, 70%);
-  }
+}
