@@ -35,6 +35,14 @@ body {
   padding: 0;
 }
 
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+}
+
 h3 {
   font-size: 1.6rem;
 }
@@ -157,7 +165,7 @@ main .socials .line {
     background-color: white;
     width: 2px;
     /* height makes section overflow */
-    /* height: 300px; */
+    height: 267px;
     margin: 0 auto;
     margin-bottom: 8rem;
 
@@ -166,7 +174,6 @@ main .socials .line {
 main .socials ul{
     display: flex;
     position: relative;
-    height: 100%;
     flex-direction: column;
     z-index: 4;
     gap: 30px;
@@ -186,20 +193,39 @@ main .intro {
     flex-direction: column;
     position: relative;
     z-index: 4;
-    background-color: red;
+    margin-top: 8rem;
+    padding-left: 7rem;
     /* padding-left: 5rem; */
 }
 main h1 {
     font-size: 5rem;
     color: white;
-   
+    width: 70%;
+
 }
 
 main p {
     font-size: 2rem;
     max-width: 500px;
-    background-color: blue;
     color: white;
+    margin-top: 5rem;
+}
+
+main button {
+  margin-top: 9rem;
+  width: 200px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: .6rem 0;
+  border: none;
+  border-radius: 6px;
+  background-color: hsl(210, 96%, 33%);
+  color: white;
+}
+
+main button:hover {
+  cursor: pointer;
+  background-color: hsl(210, 96%, 42%);
 }
 
 
